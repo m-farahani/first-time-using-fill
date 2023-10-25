@@ -1,0 +1,58 @@
+body{
+     background-color: pink;
+}
+
+.text{
+     position: relative;
+     border: transparent;
+     width: 100px;
+}
+
+.progress-bar{
+     position: absolute;
+     left: 100px;
+     top: 100px;
+     right: 250px;
+     width: 200px;
+     height: 20px;
+     background-color: #3498db;
+     animation: fill 3s infinite;
+     -webkit-animation: fill 3s infinite;
+     transition: all 550ms;
+     animation: fill 3s infinite;
+}
+
+@keyframes fill{
+     0%{
+        width: 0;
+        background-color: aqua;
+     }
+     25%{
+        width:25px;
+        background-color: blue;
+     }
+
+     50%{
+        width:50px;
+        background-color: rgb(27, 27, 116);
+     }
+
+     75%{
+        width:75px;
+        background-color: rgb(214, 46, 46);
+     }
+     100%{
+        width: 100px;
+        background-color: green;
+     }
+
+}
+
+.text:hover{
+    background-color: rgba(110, 110, 110, 0.637);
+    transition: all 550ms;
+    -webkit-transition: all 550ms;
+    -moz-transition: all 550ms;
+    -ms-transition: all 550ms;
+    -o-transition: all 550ms;
+}
